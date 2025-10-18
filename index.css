@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #f3f5f9;
+}
+
+body, html {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #162141;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    color: #f64762;
+    background: #080101;
+    padding: 10px 35px;
+    margin-bottom: 10px;
+
+    border-radius: 3px;
+    font-size: 50px;
+    font-family: 'Cursed Timer ULil', sans-serif;
+}
+
+.score-btn {
+    background: #162141;
+    color: #7e86a9;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #7e86a9;
+    transition: 0.3s;
+
+    font-family: 'Cursed Timer ULil', sans-serif;
+}
+
+.score-btn:hover {
+    background: #1f2c5a; /* lighter navy */
+    color: #ffffff;      /* make text pop on hover */
+    border-color: #ffffff;
+}
+
+.score-btn:active {
+    background: #0f1730; /* darker navy when pressed */
+    transform: scale(0.97); /* slight press animation */
+}
